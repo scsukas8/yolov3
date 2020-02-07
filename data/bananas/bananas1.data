@@ -1,0 +1,5 @@
+classes=4
+train=data/bananas/banana_train.txt
+valid=data/bananas/banana_test.txt
+names=data/bananas/classes.names
+backup=backup/
