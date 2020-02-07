@@ -11,12 +11,16 @@ file = "Background"
 baseImgPath = root + file
 baseImgs = []
 NUM_BASE = 5
+
+background_size = (504, 672)
 for i in range(NUM_BASE):
-    baseImgs.append(cv2.imread(baseImgPath + f"{i+1}.jpg"))
+    baseImg = cv2.imread(baseImgPath + f"{i+1}.jpg")
+    baseImg = cv2.resize(baseImg, background_size)
+    baseImgs.append(baseImg)
 
 
 base_y, base_x = (0,0)
-size_y, size_x = (300,300)
+size_y, size_x = (50, 50)
 transparent = np.zeros((size_y, size_x, 4), np.uint8)
 
 imgs = {}
