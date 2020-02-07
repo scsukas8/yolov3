@@ -131,7 +131,7 @@ if not os.path.exists(lab_dir):
 
 images_list = []
 
-for i in range(100):
+for i in range(1000):
     if i % 100 == 0:
         print("Iteration Number: %s" % i)
     
