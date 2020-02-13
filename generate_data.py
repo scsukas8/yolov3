@@ -5,6 +5,8 @@ import sys
 import numpy as np
 import random
 
+
+
 # Load base images
 root = "" #"/Users/seancsukas/Documents/Workspace/bananagrams/"
 file = "Background"
@@ -135,7 +137,7 @@ if not os.path.exists(lab_dir):
 
 images_list = []
 
-for i in range(1000):
+for i in range(10000):
     if i % 100 == 0:
         print("Iteration Number: %s" % i)
     
